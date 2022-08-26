@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap');
+.nav-bar {
+    position: relative;
+    margin: 0em 5em;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-bar-logo {
+    position: relative;
+    display: flex;
+}
+.nav-bar-logo img {
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+.nav-bar-logo h3 {
+    color: rgba(255, 255, 255, 1);
+    margin-top: .8em;
+}
+.nav-bar-links {
+    display: grid;
+    grid-gap: 0em 1.3em;
+    font-weight: 200;
+    font-size: 15px;
+    grid-template-columns: repeat(3, auto);
+}
+.nav-bar-links a {
+    margin-top: .88em;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.nav-bar-link-btn a button {
+    background: rgba(226, 184, 135, 1);
+    color: rgba(0, 48, 46, 1);
+    border-radius: 5px;
+    margin-top: 1em;
+    font-size: 10px;
+    height: 3em;
+    width: 7em;
+
+}
+.nav-bar-link-btn a button:hover {
+    cursor: pointer;
+}

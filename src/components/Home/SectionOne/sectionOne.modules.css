@@ -1,0 +1,24 @@
+.section-one-container {
+    margin: 0em 5em;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+}
+.section-one-text-container {
+    display: grid;
+    grid-gap: 1em 0em;
+    margin-right: 20em;
+    margin-top: 3em;
+    width: 30em;
+    color: rgba(255, 255, 255, 1);
+}
+.section-one-h1-text-special {
+    color: rgba(251, 221, 187, 1);
+}
+.section-one-app-store-buttons img {
+    margin-right: 1em;
+}
+.section-one-container-img {
+    width: 20em;
+    height: 20em;
+}

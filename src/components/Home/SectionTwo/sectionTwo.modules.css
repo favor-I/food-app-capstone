@@ -1,0 +1,21 @@
+.section-two-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0em 5em;
+    padding-top: 5em;
+    color: rgba(255, 255, 255, 0.87);
+}
+.section-two-container h2{
+    left: 0;
+    position: relative;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+}
+.section-two-container-p{
+    position: relative;
+    text-align: center;
+    margin-top: 1.3em;
+    width: 100%;
+}
