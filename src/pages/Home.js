@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 import '../assets/css/home.css'
+import Footer from '../components/Footer/Footer'
 import SectionOne from '../components/Home/SectionOne/SectionOne'
 import SectionThree from '../components/Home/SectionThree/SectionThree'
 import SectionTwo from '../components/Home/SectionTwo/SectionTwo'
@@ -15,6 +16,7 @@ const Home = () => {
             <SectionTwo />
             <SectionThree />
         </div>
+        <Footer />
     </div>
   )
 }

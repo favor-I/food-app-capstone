@@ -1,4 +1,37 @@
 .section-three-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12em;
     margin: 0em 5em;
-    padding-top: 3em;
+}
+.section-three-left {
+    width: 30em;
+    display: grid;
+    grid-gap: 1em 0em;
+    color: rgba(251, 221, 187, 1);
+}
+.section-three-left h3 {
+    font-size: 30px;
+}
+.section-three-left p{
+    width: 29em;
+    font-size: 12px;
+}
+.section-three-right input {
+    margin-right: .5em;
+    border-radius: 2px;
+    border: none;
+    height: 2em;
+    width: 17em;
+}
+.section-three-right input[placeholder] {
+    color: rgba(178, 178, 178, 1);
+    padding: 0em 3em;
+}
+.section-three-right button{
+    background: rgba(251, 221, 187, 1);
+    border-radius: 2px;
+    border: none;
+    height: 2em;
+    width: 8em;
 }

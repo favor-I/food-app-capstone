@@ -19,3 +19,23 @@
     margin-top: 1.3em;
     width: 100%;
 }
+.meal-display-container {
+    padding-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+.meal-display-card {
+    display: grid;
+    grid-gap: 1em 0em;
+    text-align: center;
+}
+.meal-display-card img {
+    width: 15em;
+    height: 15em;
+    margin-left: 5em;
+}
+.meal-display-card p{
+    width: 15em;
+    margin-left: 5em;
+    text-align: center;
+}
