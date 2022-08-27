@@ -1,0 +1,16 @@
+.login-reg-btn {
+    width: 25.8em;
+    border: none;
+    font-size: 11px;
+    margin-top: 2em;
+    font-weight: 400;
+    font-family: Rubik;
+    padding: 1.3em 7em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: rgba(251, 221, 187, 1);
+    background: rgba(0, 48, 46, 1);
+}
+.login-reg-btn:hover {
+    cursor: pointer;
+}
