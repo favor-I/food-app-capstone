@@ -21,14 +21,12 @@
 }
 .login-form {
     position: relative;
-    display: inline;
     right: -55em;
     padding: 13em 0em 3em 0em;
     height: 10em;
     width: 35%;
     text-align: center;
     flex-direction: column;
-    /* border: 1px solid red; */
 }
 .login-form input{
     height: 3em;
