@@ -1,0 +1,28 @@
+.dashboard-content-container{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5.7em;
+    position: absolute;
+    left: 20em;
+}
+.top{
+    position: relative;
+    display: flex;
+}
+.top img {
+    width: 2em;
+    height: 2em;
+    margin-left: 39em;
+    border-radius: 1em;
+}
+.top-welcome-container {
+}
+.bottom {
+    margin-right: 3em;
+    display: grid;
+    padding-bottom: 3em;
+    grid-gap: 4em 8em;
+    grid-template-columns: repeat(3, auto);
+    position: relative;
+    margin-top: 5em;
+}

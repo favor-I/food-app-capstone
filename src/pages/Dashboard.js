@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/dashboard.css'
 import SideBar from '../components/SideBar/SideBar'
 import DashboardContent from '../components/Dashboard/DashboardContent'
 
 const Dashboard = () => {
+    let [activeUser] = useState('Favour')
+
+    console.log(activeUser)
   return (
     <div className='dashboard-wrapper'>
         <SideBar />
-        <DashboardContent />
+        <DashboardContent loggedInUser={activeUser}/>
     </div>
   )
 }
