@@ -5,10 +5,10 @@ const LoginFormComponent = () => {
   return (
     <form className='login-form'>
       <h3>Welcome Back!</h3>
-      <input placeholder='Your Email address'></input>
-      <input placeholder='Your Password'></input>
+      <input type={'email'} placeholder='Your Email address'></input>
+      <input type={'password'} placeholder='Your Password'></input>
       <LoginRegBtn btnText='Login' />
-      <div className='create-acct-forgot-pass-div'>
+      <div className='login-create-acct-forgot-pass-div'>
         <p>Create an account</p>
         <p>forgot password?</p>
       </div>

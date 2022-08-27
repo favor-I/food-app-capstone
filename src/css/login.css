@@ -42,7 +42,7 @@
     font-weight: bold;
     color: rgba(0, 48, 46, 1);
 }
-.create-acct-forgot-pass-div {
+.login-create-acct-forgot-pass-div {
     display: flex;
     /* width: 10em; */
     margin-top: 2.5em;
