@@ -1,6 +1,5 @@
 import React from 'react'
 import './footer.models.css'
-import { Link } from 'react-router-dom'
 import MobileStore from '../Mobile/MobileStore'
 import Socials from '../Socials/Socials'
 
