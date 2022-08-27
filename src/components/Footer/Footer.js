@@ -1,6 +1,8 @@
 import React from 'react'
-import MobileStore from '../Mobile/MobileStore'
 import './footer.models.css'
+import { Link } from 'react-router-dom'
+import MobileStore from '../Mobile/MobileStore'
+import Socials from '../Socials/Socials'
 
 const Footer = () => {
   return (
@@ -27,6 +29,13 @@ const Footer = () => {
             <div>
                 <h5>Install App</h5>
                 <MobileStore />
+            </div>
+        </div>
+        <hr></hr>
+        <div className='footer-copyright'>
+            <p>© 2021 LILIES, All rights reserved</p>
+            <div className='footer-social-links'>
+                <Socials />
             </div>
         </div>
     </footer>
