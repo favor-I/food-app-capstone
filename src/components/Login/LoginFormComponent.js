@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import LoginRegBtn from '../Template/LoginRegBtn/LoginRegBtn'
 
 const LoginFormComponent = () => {
@@ -9,7 +10,7 @@ const LoginFormComponent = () => {
       <input type={'password'} placeholder='Your Password'></input>
       <LoginRegBtn btnText='Login' />
       <div className='login-create-acct-forgot-pass-div'>
-        <p>Create an account</p>
+        <p><Link to={'/sign-up'}>Create an account</Link></p>
         <p>forgot password?</p>
       </div>
 

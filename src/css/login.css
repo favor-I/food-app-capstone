@@ -44,9 +44,11 @@
 }
 .login-create-acct-forgot-pass-div {
     display: flex;
-    /* width: 10em; */
+    font-size: 10px;
     margin-top: 2.5em;
     padding: 0em 5.5em;
     justify-content: space-between;
-    font-size: 10px;
+}
+.login-create-acct-forgot-pass-div a {
+    text-decoration: none;
 }

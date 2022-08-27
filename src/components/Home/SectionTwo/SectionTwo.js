@@ -20,8 +20,8 @@ const SectionTwo = () => {
         </div>
         <div className='meal-display-container'>
           {
-            menuCardsXAttrb && menuCardsXAttrb?.map((item, index) => (
-              <div className='meal-display-card'>
+            menuCardsXAttrb && menuCardsXAttrb?.map((item) => (
+              <div key={item.menuName} className='meal-display-card'>
                 <MenuImageSection mealImage={item.menuImage} mealImageAlt={item.menuImageAlt} mealName={item.menuName} mealDescription={item.menuDescription} />
               </div>
             ))
