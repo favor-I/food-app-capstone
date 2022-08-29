@@ -9,7 +9,7 @@ const Menu = ({ cardImg, cardImgAlt, menuName, menuDesc, price, addBtn }) => {
         <p>{menuDesc}</p>
         <div className='price-place' >
             <p>{price}</p>
-            <p>{addBtn}</p>
+            <p className='add-to-cart'>{addBtn}</p>
         </div>
     </div>
   )

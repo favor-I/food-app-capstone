@@ -30,3 +30,9 @@
 .price-place p {
     font-size: 10px;
 }
+.add-to-cart {
+    color: rgba(6, 231, 117, 1);
+}
+.add-to-cart:hover {
+    cursor: pointer;
+}
