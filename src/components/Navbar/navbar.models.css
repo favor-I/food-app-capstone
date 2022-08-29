@@ -9,6 +9,9 @@
     position: relative;
     display: flex;
 }
+.nav-bar-logo-a {
+    text-decoration: none;
+}
 .nav-bar-logo img {
     width: 2.5em;
     height: 2.5em;

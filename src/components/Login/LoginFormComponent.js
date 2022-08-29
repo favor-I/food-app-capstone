@@ -8,7 +8,7 @@ const LoginFormComponent = () => {
       <h3>Welcome Back!</h3>
       <input type={'email'} placeholder='Your Email address'></input>
       <input type={'password'} placeholder='Your Password'></input>
-      <LoginRegBtn btnText='Login' />
+      <Link to='/dashboard'><LoginRegBtn btnText='Login' /></Link>
       <div className='login-create-acct-forgot-pass-div'>
         <p><Link to={'/sign-up'}>Create an account</Link></p>
         <p>forgot password?</p>

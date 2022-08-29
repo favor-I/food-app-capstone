@@ -1,0 +1,5 @@
+#Route declared
+/pages/Home.js              /
+/pages/Login.js             /login
+/pages/SignUp.js             /sign-up
+/pages/Dashboard.js             /dashboard

@@ -6,10 +6,10 @@ import navLogo from './svg/nav-logo.svg'
 const Navbar = () => {
   return (
     <div className='nav-bar'>
-        <div className='nav-bar-logo'>
+        <Link className='nav-bar-logo-a' to='/'><div className='nav-bar-logo'>
             <img src={navLogo} alt = 'logo' ></img>
             <h3>Lilies</h3>
-        </div>
+        </div></Link>
         <div className='nav-bar-links'>
             <Link to= '/'>Home</Link>
             <Link to= '/login'> Login</Link>

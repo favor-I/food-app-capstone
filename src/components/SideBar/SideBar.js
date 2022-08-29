@@ -1,7 +1,6 @@
 import React from 'react'
 import './side-bar.models.css'
 import Logo from  './assets/logo.svg'
-import { useLocation } from 'react-router-dom'
 import homeIcon from './assets/icons/home.svg'
 import profileIcon from './assets/icons/profile.svg'
 import orderIcon from './assets/icons/order.svg'
@@ -28,7 +27,6 @@ const SidebarItem = ({itemLogo, itemLogoAlt, item, itemNotify, spanClassName}) =
 }
 
 const SideBar = () => {
-    console.log(useLocation.pathname)
   return (
     <div className='sidebar-wrapper'>
         <SidebarLogo />
