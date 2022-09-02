@@ -1,5 +1,5 @@
 #Route declared
-/src/pages/Home.js              /
-/src/pages/Login.js             /login
+/src/pages/Login.js              /
+/src/pages/Home.js             /home
 /src/pages/SignUp.js             /sign-up
 /src/pages/Dashboard.js             /dashboard
