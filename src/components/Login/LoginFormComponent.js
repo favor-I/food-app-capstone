@@ -2,13 +2,14 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import LoginRegBtn from '../Template/LoginRegBtn/LoginRegBtn'
 
-const LoginFormComponent = () => {
+const LoginFormComponent = ({handlesOnChange, handlesOnSubmit}) => {
   return (
-    <form className='login-form'>
+    <form className='login-form' onChange={handlesOnChange} onSubmit={handlesOnSubmit}>
       <h3>Welcome Back!</h3>
-      <input type={'email'} placeholder='Your Email address'></input>
-      <input type={'password'} placeholder='Your Password'></input>
-      <Link to='/dashboard'><LoginRegBtn btnText='Login' /></Link>
+      <input name='userEmail' type={'email'} placeholder='Your Email address'></input>
+      <input name='userPassword' type={'password'} placeholder='Your Password'></input>
+      {/* <Link to='/dashboard'><LoginRegBtn btnText='Login' /></Link> */}
+      <LoginRegBtn btnText='Login' />
       <div className='login-create-acct-forgot-pass-div'>
         <p><Link to={'/sign-up'}>Create an account</Link></p>
         <p>forgot password?</p>

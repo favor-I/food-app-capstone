@@ -1,9 +1,9 @@
 import './login-reg-btn.models.css'
 import React from 'react'
 
-const LoginRegBtn = ({btnText}) => {
+const LoginRegBtn = ({btnText, btnName, onClickFunc, ownClassName}) => {
   return (
-    <button className='login-reg-btn'>{btnText}</button>
+    <button onClick={onClickFunc} name={btnName} className={`login-reg-btn ${ownClassName}`}>{btnText}</button>
   )
 }
 
