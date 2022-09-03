@@ -15,7 +15,9 @@ const Dashboard = () => {
 
     const handleLogout = () => {
       sessionStorage.clear()
-      navigate('/')
+      setTimeout(()=> {
+        navigate('/')
+      }, 1000)
     }
 
   return (

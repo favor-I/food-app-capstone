@@ -4,6 +4,7 @@ import {NotificationContainer, NotificationManager} from 'react-notifications';
 import SignUpFormComponent from '../components/SignUp/SignUpFormComponent'
 import DividedSession from '../components/Template/LoginRegTemp/DividedSession'
 import backgroundImageCover from '../components/SignUp/sign-up-background-cover.png'
+import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -24,19 +25,17 @@ const SignUp = () => {
     
     sessionStorage.setItem('newUser',JSON.stringify(form))
 
-    NotificationManager.success('User Created')
+    toast('User Created')
 
     // toast.success('Account Created')
 
-    setInterval(()=>{
-      // window.location = '/login'
+    setTimeout(()=>{
       navigate('/')
     }, 2000)
   }
   // console.log(form)
   return (
     <div className='sign-up-form-wrapper'>
-      <NotificationContainer />
     <div className='sign-up-form-image-container'>
       <DividedSession backgroundImg={backgroundImageCover} backgroundImgAlt='Sign Up background' backgroundImgClassName={'sign-up-form-bg-img'}  />
     </div>

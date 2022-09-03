@@ -9,10 +9,14 @@ import Login from "./pages/Login";
 import SignUp from "./pages/SignUp";
 import Dashboard from "./pages/Dashboard";
 import 'react-notifications/lib/notifications.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <Router>
+    <>
+      <ToastContainer />
+      <Router>
       <Routes>
         <Route element = {<Login />} path='/'></Route>
         <Route element = {<Home />} path='/home'></Route>
@@ -20,6 +24,7 @@ function App() {
         <Route element = {<Dashboard />} path='/dashboard'></Route>
       </Routes>
     </Router>
+    </>
   );
 }
 
