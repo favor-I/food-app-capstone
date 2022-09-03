@@ -29,6 +29,8 @@ const Login = () => {
       // setIsAuthenticated(true)
       NotificationManager.success(`${storedUser.userName} is signed in`, 'Success Message', 2000)
       navigate('/dashboard')
+    } else if(sessionStorage){
+
     }else{
       NotificationManager.error('invalid login details', 'Error Message', 2000)
     }
