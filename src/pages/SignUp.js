@@ -1,6 +1,5 @@
 import { React , useState} from 'react'
 import '../css/sign-up.css'
-import {NotificationContainer, NotificationManager} from 'react-notifications';
 import SignUpFormComponent from '../components/SignUp/SignUpFormComponent'
 import DividedSession from '../components/Template/LoginRegTemp/DividedSession'
 import backgroundImageCover from '../components/SignUp/sign-up-background-cover.png'
