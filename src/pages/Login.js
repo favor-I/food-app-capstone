@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [loginData, setLoginData] = useState({})
-  // const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
   const navigate = useNavigate()
 
 
@@ -23,15 +23,15 @@ const Login = () => {
   
   const handleLogin = (e) => {
     e.preventDefault()
+    setIsAuthenticated(true)
     const storedUser = JSON.parse(sessionStorage.getItem('newUser'))
     
     if(loginData?.userEmail === storedUser?.userEmail && loginData?.userPassword === storedUser?.userPassword ){
-      // NotificationManager.success(`${storedUser.userName} is signed in`, 'Success Message', 2000)
       setTimeout(()=>{
         toast.success(`${storedUser.userName} is signed in`, {position: 'bottom-right', autoClose: 1000})
         navigate('/dashboard')
       })
-    } 
+    }
     // else if(sessionStorage){
 
     // }

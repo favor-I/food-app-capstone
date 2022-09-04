@@ -7,13 +7,15 @@ import { useNavigate } from 'react-router-dom'
 const Dashboard = () => {
   const navigate = useNavigate()
   let [activeUser, setActiveUser] = useState('')
-    const itemClassName = window.location.pathname === '/dashboard' ? 'selected-sidebar-item': ''
-    useEffect(()=>{
-      let existingUserDet = JSON.parse(sessionStorage.getItem('newUser'))
-      if(existingUserDet)setActiveUser(existingUserDet)      
-    },[])
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const itemClassName = window.location.pathname === '/dashboard' ? 'selected-sidebar-item': ''
+  useEffect(()=>{
+    let existingUserDet = JSON.parse(sessionStorage.getItem('newUser'))
+    if(existingUserDet)setActiveUser(existingUserDet)      
+  },[])
 
     const handleLogout = () => {
+      setIsAuthenticated(isAuthenticated)
       sessionStorage.clear()
       setTimeout(()=> {
         navigate('/')

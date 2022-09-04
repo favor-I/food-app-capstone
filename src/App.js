@@ -12,13 +12,14 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+  
   return (
     <>
       <ToastContainer />
       <Router>
       <Routes>
-        <Route element = {<Login />} path='/'></Route>
-        <Route element = {<Home />} path='/home'></Route>
+        <Route element = {<Home />} path='/'></Route>
+        <Route element = {<Login />} path='/login'></Route>
         <Route element = {<SignUp />} path='/sign-up'></Route>
         <Route element = {<Dashboard />} path='/dashboard'></Route>
       </Routes>

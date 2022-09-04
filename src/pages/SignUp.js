@@ -24,12 +24,12 @@ const SignUp = () => {
     
     sessionStorage.setItem('newUser',JSON.stringify(form))
 
-    toast('User Created')
+    toast.success('User Created', {position: 'bottom-right', delay: 1000})
 
     // toast.success('Account Created')
 
     setTimeout(()=>{
-      navigate('/')
+      navigate('/login')
     }, 2000)
   }
   // console.log(form)
