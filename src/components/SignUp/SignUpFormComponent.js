@@ -11,7 +11,7 @@ const SignUpFormComponent = ({onChangeFunc, handlesOnSubmit}) => {
       <input onChange={onChangeFunc} name='userPassword' type={'password'} placeholder='Your Password'></input>
       <LoginRegBtn btnText='Sign Up' />
       <div className='create-acct-forgot-pass-div'>
-        <p>Already have an account. <span className='login-btn'><Link to='/'>LOGIN</Link></span></p>
+        <p>Already have an account. <span className='login-btn'><Link to='/login'>LOGIN</Link></span></p>
       </div>
     </form>
   )

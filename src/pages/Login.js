@@ -10,7 +10,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [loginData, setLoginData] = useState({})
-  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  // const [isAuthenticated, setIsAuthenticated] = useState(false)
   const navigate = useNavigate()
 
 
@@ -23,19 +23,22 @@ const Login = () => {
   
   const handleLogin = (e) => {
     e.preventDefault()
-    setIsAuthenticated(true)
+    // setIsAuthenticated(true)
     const storedUser = JSON.parse(sessionStorage.getItem('newUser'))
     
     if(loginData?.userEmail === storedUser?.userEmail && loginData?.userPassword === storedUser?.userPassword ){
       setTimeout(()=>{
-        toast.success(`${storedUser.userName} is signed in`, {position: 'bottom-right', autoClose: 1000})
+        toast.success(`${storedUser.userName} is signed in`, {position: 'bottom-right', autoClose: 1000, theme: 'dark'})
         navigate('/dashboard')
       })
     }
-    // else if(sessionStorage){
-
-    // }
-    else{
+    else if(storedUser === null){
+      setTimeout(()=> {
+        toast.error("User doesn't exist", {position: 'bottom-right', autoClose: 1000, theme: 'dark'})
+        navigate('/sign-up')
+      })
+    }
+    else if (loginData?.userEmail !== storedUser?.userEmail || loginData?.userPassword !== storedUser?.userPassword){
       toast.error(`invalid login details`, {position: 'bottom-right', autoClose: 1000})
     }
     
